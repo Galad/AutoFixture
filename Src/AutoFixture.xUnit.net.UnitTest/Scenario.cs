@@ -144,7 +144,7 @@ namespace Ploeh.AutoFixture.Xunit.UnitTest
 
         [Theory, AutoData]
         public void FreezeFirstParameterShouldAssignSameInstanceToSecondParameter(
-            [Freeze]string p1,
+            [Frozen]string p1,
             string p2)
         {
             Assert.Same(p1, p2);
